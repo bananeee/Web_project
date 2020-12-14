@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new listing</title>
+    <link rel="stylesheet" href="add-amenity.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="list-container">
+        <div id="add-new-listing">
+            <h1>Add new listing</h1>
+        </div>
+
+        <div id="amenity">
+            <h2>Amenity</h2>
+        </div>
+
+        <div class="amenity-form">
+            <form>
+                <div class="category" id="bathroom">
+                    <div class="category-name">Bathroom</div>
+                    <div class="to-complete" id="bathroom-type">
+                        <label for="to-complete-type">Type</label>
+                        <select id="to-complete-type">
+                            <option value="kin">Khép kín</option>
+                            <option value="chung">Chung</option>
+                        </select>
+                    </div>
+                    <div class="to-complete" id="bathroom-water">
+                        <label for="to-complete-water">Water</label>
+                        <select id="to-complete-water">
+                            <option value="nong">Có nóng lạnh</option>
+                            <option value="lanh">Không có nóng lạnh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="category" id="kitchen">
+                    <div class="category-name">Kitchen</div>
+                    <div class="to-complete">
+                        <label for="to-complete-kitchen">Kitchen</label>
+                        <select id="to-complete-kitchen">
+                            <option value="rieng">Khu bếp riêng</option>
+                            <option value="chung">Khu bếp chung</option>
+                            <option value="khong-nau-an">Không nấu ăn</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="category" id="air-conditioner">
+                    <div class="category-name">Air conditioner</div>
+                    <div class="to-complete">
+                        <label for="to-complete-airconditioner">Air conditioner</label>
+                        <select id="to-complete-kitchen">
+                            <option value="co">Có</option>
+                            <option value="khong">Không</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="category" id="balcony">
+                    <div class="category-name">Balcony</div>
+                    <div class="to-complete">
+                        <label for="to-complete-balcony">Balcony</label>
+                        <select id="to-complete-balcony">
+                            <option value="co">Có</option>
+                            <option value="khong">Không</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="category" id="electricity/water-bill">
+                    <div class="category-name">Electricity and Water bill</div>
+                    <div class="to-complete" id="electricity-bill">
+                        <label for="to-complete-electricity-bill">Electricity</label>
+                        <select id="to-complete-electricity-bill">
+                            <option value="dan">Giá dân</option>
+                            <option value="thue">Giá thuê</option>
+                        </select>
+                    </div>
+                    <div class="to-complete" id="water-bill">
+                        <label for="to-complete-water-bill">Water (đồng/m3)</label>
+                        <input type="text" id="to-complete-water-bill" placeholder="5,000">
+                    </div>
+                </div>
+                <div class="category" id="other">
+                    <div class="category-name">Other</div>
+                    <div class="to-complete">
+                        <label for="to-complete-other">Other</label>
+                        <input type="text" id="to-complete-other" placeholder="Tủ lạnh/ máy giặt/ giường tủ">
+                    </div>
+                </div>
+                <div class="category" id="continue">
+                    <button id="continue-button">Continue</button>
+                </div>              
+            </form>           
+        </div>
+    </div>
+</body>
+</html>

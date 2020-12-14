@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new listing</title>
+    <link rel="stylesheet" href="add-description.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="list-container">
+        <div id="add-new-listing">
+            <h1>Add new listing</h1>
+        </div>
+
+        <div id="description">
+            <h2>Description</h2>
+        </div>
+
+        <div class="description-form">
+            <form>
+                <div class="category" id="title">
+                    <div class="category-name">Title</div>
+                    <div class="to-complete">
+                        <label for="title-title">Title</label>
+                        <input type="text" id="title-title" placeholder="Home Sweet Home">
+                    </div>
+                </div>
+                <div class="category" id="location">
+                    <div class="category-name">Location</div>
+                    <div class="wrap-item">
+                        <div class="to-complete" id="location-no">
+                            <label for="to-complete-no">No</label>
+                            <input type="text" id="to-complete-no" placeholder="144">
+                        </div>
+                        <div class="to-complete" id="location-road">
+                            <label for="to-complete-road">Road</label>
+                            <input type="text" id="to-complete-road" placeholder="Xuân Thủy">
+                        </div>
+                        <div class="to-complete" id="location-ward">
+                            <label for="to-complete-ward">Ward</label>
+                            <input type="text" id="to-complete-ward" placeholder="Dịch Vọng Hậu">
+                        </div>
+                        <div class="to-complete" id="location-district">
+                            <label for="to-complete-district">District</label>
+                            <input type="text" id="to-complete-district" placeholder="Cầu Giấy">
+                        </div>
+                        <div class="to-complete" id="location-city">
+                            <label for="to-complete-city">City</label>
+                            <input type="text" id="to-complete-city" placeholder="Hà Nội">
+                        </div>
+                    </div>                   
+                </div>
+                
+                <div class="category" id="nearby">
+                    <div class="category-name">Nearby</div>
+                    <div class="to-complete">
+                        <label for="to-complete-nearby">Nearby</label>
+                        <textarea id="to-complete-nearby" placeholder="Trường học, bệnh viện,..."></textarea>
+                    </div>
+                </div>
+    
+                <div class="category" id="type">
+                    <div class="category-name">Type</div>
+                    <div class="to-complete" id="type-detail">
+                        <label for="to-complete-detail">Type</label>
+                        <select id="to-complete-detail">
+                            <option value="phong-tro">Phòng trọ</option>
+                            <option value="chung-cu-mini">Chung cư mini</option>
+                            <option value="nha">Nhà nguyên căn</option>
+                            <option value="chung-cu-nguyen-can">Chung cư nguyên căn</option>
+                        </select>
+                    </div>
+                    <div class="to-complete" id="type-room">
+                        <label for="to-complete-room">Number of room</label>
+                        <input type="text" id="to-complete-room" placeholder="2">
+                    </div>
+                </div>
+    
+                <div class="category" id="price">
+                    <div class="category-name">Price</div>
+                    <div class="to-complete" id="price-type">
+                        <label for="to-complete-price-type">Type</label>
+                        <select id="to-complete-detail">
+                            <option value="thang">Tháng</option>
+                            <option value="qui">Quí</option>
+                            <option value="nam">Năm</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="to-complete" id="price">
+                        <label for="to-complete-price">Price (đồng)</label>
+                        <input type="text" id="to-complete-price" placeholder="1,000,000">
+                    </div>
+                </div>
+    
+                <div class="category" id="area">
+                    <div class="category-name">Area (m2)</div>
+                    <div class="to-complete">
+                        <label for="to-complete-area">Area</label>
+                        <input type="text" id="to-complete-area" placeholder="50">
+                    </div>
+                </div>
+    
+                <div class="category" id="other">
+                    <div class="category-name">Other</div>
+                    <div class="to-complete">
+                            <label for="to-complete-other">Other</label>
+                            <select id="to-complete-other">
+                                <option value="chung">Chung</option>
+                                <option value="khong-chung">Không chung chủ</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="category" id="continue">
+                    <button id="continue-button">Continue</button>
+                </div>
+            </form>           
+        </div>
+    </div>
+</body>
+</html>
