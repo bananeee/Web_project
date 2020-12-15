@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+tbody>tr:hover {
+    background-color: rgba(216, 220, 225, 0.1);
+}
+
+#container {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+#head {
+    padding-left: 25px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+#head button {
+    padding: 2px 15px;
+    margin: 10px 20px 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding: 25px 20px;
+    border-bottom: 0;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1045px) {
+    th tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+    td::before {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        margin-right: 100px;
+        width: 45%;
+        font-weight: 700;
+        content: attr(id);
+        text-transform: capitalize;
+    }
+}
