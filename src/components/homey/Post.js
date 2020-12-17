@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "./logo.jpg";
+
+import { useDispatch } from "react-redux";
 
 import "./PostStyle.css";
 
@@ -10,11 +11,15 @@ import { faBath } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-export const Post = () => {
+
+
+export const Post = ({ post, setCurrentId }) => {
+
+
     return (
         <div className="container">
             <div className="image">
-                <img src={logo} alt="Failure" />
+                <img src={post.selectedFile} alt="Failure" />
             </div>
 
             <div className="status">

@@ -14,6 +14,8 @@ import SlideShow from "./components/SlideShow/SlideShow";
 
 import Property from "./components/Property/Property";
 
+import Display from "./components/CreateForm/Display";
+
 export const App = (props) => {
     // const [username, setusername] = useState("");
 
@@ -59,6 +61,7 @@ export const App = (props) => {
                 <div>
                     {/* <MyListings /> */}
                     <Property />
+                    {/* <Display /> */}
                 </div>
             </div>
         </Router>

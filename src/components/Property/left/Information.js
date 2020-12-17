@@ -16,7 +16,7 @@ const Information = () => {
     return (
             <div>
                 <div className={`${styles.contentTitle}`}>
-                    <ul className={`${styles.row1}`}>
+                    <ul className={styles.row1}>
                         <li>Home {" > "} </li>
                         <li>Apartment {" > "} </li>
                         <li>Modern Apartment With Pool</li>
