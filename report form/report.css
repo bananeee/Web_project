@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: rgb(210, 232, 252);
+    padding-top: 100px;
+}
+
+.report-container {
+    min-width: 300px;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+}
+
+.report-header {
+    border-bottom: 1px dotted rgb(218, 215, 215);
+}
+
+.report-header > h2 {
+    padding: 25px;
+}
+
+.report-body {
+    padding: 50px;
+
+}
+
+.report-problem {
+    display: flex;
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+.report-description {
+    display: flex;
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+label {
+    width: 40%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+select, textarea {
+    width: 60%;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #55545483;
+    border-radius: 3px;
+}
+
+select:focus, textarea:focus {
+    outline-color: rgba(250, 141, 177, 0.658);
+}
+
+button {
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    width: 20%;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}

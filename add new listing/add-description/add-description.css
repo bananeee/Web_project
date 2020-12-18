@@ -71,7 +71,7 @@ body {
 .to-complete > select,
 .to-complete > textarea {
     outline: 1px solid 1px;
-    outline-color: rgba(247, 126, 186, 0.425);
+    outline-color: rgba(250, 141, 177, 0.658);
 }
 
 .to-complete > * {

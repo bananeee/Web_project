@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="report.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="report-container">
+        <div class="report-header">
+            <h2>Report</h2>
+        </div>
+
+        <div class="report-body">
+            <div class="report-problem">
+                <label for="selection">Select your problem:</label>
+                <select id="selection">
+                    <option value="non-exist">Không tồn tại</option>
+                    <option value="fake detail">Thông tin không chính xác</option>
+                    <option value="other">Khác</option>
+                </select>
+            </div>
+            <div class="report-description">
+                <label for="description">Decription:</label>
+                <textarea id="description" placeholder="Write your description for the problem"></textarea>
+            </div>
+            <div class="send-button">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
