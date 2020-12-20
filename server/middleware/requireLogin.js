@@ -16,12 +16,23 @@ export const requireLogin = async (req, res, next) => {
         if (err) {
             return res.status(401).json({ error: "You must be logged in" });
         }
-
         const { _id } = authData;
         
         RenterModel.findById(_id).then((data) => {
-            req.renter = data;
+            req.user = data;
             next();
         });
     });
+};
+
+export const verifyToken = (req, res, next) => {
+    const bearerHeader = req.headers["authorization"];
+    if (typeof bearerHeader !== "undefined") {
+        const bearer = bearerHeader.split(" ");
+        const bearerToken = bearer[1];
+        req.token = bearerToken;
+        next();
+    } else {
+        return res.status(401).json({ error: "you must be logged in" });
+    }
 };
