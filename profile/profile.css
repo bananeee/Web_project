@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
+
 * {
     margin: 0;
     padding: 0;
@@ -142,4 +144,13 @@ body {
         text-align: center;
         color: white;
         font-weight: 700;
+}
+
+.save-button > button:hover {
+    background-color: #f0384a;
+    cursor: pointer;
+}
+
+.save-button > button:focus {
+    outline: none;
 }

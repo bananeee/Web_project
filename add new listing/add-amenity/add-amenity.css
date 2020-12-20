@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
+
 * {
     margin: 0;
     padding: 0;
@@ -76,6 +78,7 @@ textarea::placeholder {
 
 #continue-button {
     min-width: 15%;
+    max-width: 30%;
     height: 40px;
     border: none;
     border-radius: 2px;
@@ -95,3 +98,10 @@ textarea::placeholder {
 #continue-button:focus {
     outline: none;
 }
+
+@media (max-width: 600px) {
+    .category {
+        flex-direction: column;
+    }
+}
+

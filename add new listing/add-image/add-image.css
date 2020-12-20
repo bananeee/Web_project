@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
+
 * {
     margin: 0;
     padding: 0;
@@ -55,14 +57,14 @@ form > i::before {
     font-weight: 700;
     color: white;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 15%;
     border: none;
     border-radius: 2px;
     display: inline-block;
     cursor: pointer;
     background-color:#dc3545;
-    margin-top: 15px;
+    text-align: center;
+
 }
 
 .custom-file-upload:hover {
@@ -73,6 +75,7 @@ form > i::before {
 
 #continue-button {
     min-width: 15%;
+    max-width: 30%;
     height: 40px;
     border: none;
     border-radius: 2px;

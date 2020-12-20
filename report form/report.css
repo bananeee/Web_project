@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
+
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +53,8 @@ label {
 select, textarea {
     width: 60%;
     font-size: 15px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     border: 1px solid #55545483;
     border-radius: 3px;
 }
@@ -71,4 +74,13 @@ button {
     text-align: center;
     color: white;
     font-weight: 700;
+}
+
+button:hover {
+    background-color: #f0384a;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
 }

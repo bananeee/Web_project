@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
+/* @import url(path/to/font-awesome/css/font-awesome.min.css); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: wheat;
+}
+
+#image_container {
+    margin-left: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: white;
+    padding: 30px;
+}
+
+#add_new_listing {
+    padding-bottom: 40px;
+}
+
+#image_title {
+    padding-bottom: 30px;
+}
+
+.image_upload_area > p {
+    font-weight: 700;
+    color: rgba(36, 36, 36, 0.733);
+    padding-bottom: 20px;
+}
+
+form {
+    background-color: rgba(248, 210, 210, 0.267);
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed rgb(139, 138, 138);
+    border-radius: 2px;
+    flex-direction: column;
+}
+
+form > i::before {
+    font-size: 60px;
+    opacity: 0.5;
+}
+
+.custom_file_upload > input[type="file"] {
+    display: none;
+}
+.custom_file_upload {
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    width: 15%;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+    background-color:#dc3545;
+    text-align: center;
+
+}
+
+.custom_file_upload:hover {
+    background-color: #f0384a;
+    cursor: pointer;
+}
+
+
+#continue_button {
+    min-width: 15%;
+    max-width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    background-color: #dc3545;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+
+
+#continue_button:hover {
+    background-color: #f0384a;
+    cursor: pointer;
+}
+
+#continue_button:focus {
+    outline: none;
+}
+
