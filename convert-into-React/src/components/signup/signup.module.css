@@ -72,7 +72,7 @@
     /* color: white; */
 }
 
-form > label {
+.signup_form > label {
     font-weight: 700;
     padding-bottom: 6px;
     color: rgba(255, 255, 255, 0.815);

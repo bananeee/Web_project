@@ -17,7 +17,7 @@ const Add_image = () => {
                 <form>
                     {/* <i className={style.fa fa-file-image-o}></i> */}
                     <label className={style.custom_file_upload}>
-                        <input type="file" />
+                        <input type="file"/>
                         Upload
                     </label>
                 </form>

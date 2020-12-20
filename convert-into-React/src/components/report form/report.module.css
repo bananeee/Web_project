@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: rgb(210, 232, 252);
+
+}
+
+.report_container {
+    min-width: 300px;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+}
+
+.report_header {
+    border-bottom: 1px dotted rgb(218, 215, 215);
+}
+
+.report_header > h2 {
+    padding: 25px;
+}
+
+.report_body {
+    padding: 50px;
+}
+
+.report_problem {
+    display: flex;
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+.report_description {
+    display: flex;
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+.report_body label {
+    width: 40%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.report_body select, 
+.report_body textarea {
+    width: 60%;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #55545483;
+    border-radius: 3px;
+}
+
+.report_body select:focus, 
+.report_body textarea:focus {
+    outline-color: rgba(250, 141, 177, 0.658);
+}
+
+.report_body button {
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    width: 20%;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.report_body button:hover {
+    background-color: #f0384a;
+    cursor: pointer;
+}
+
+.report_body button:focus {
+    outline: none;
+}
+

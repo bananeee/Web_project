@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
-/* @import url(path/to/font-awesome/css/font-awesome.min.css); */
 
 * {
     margin: 0;
@@ -12,7 +11,7 @@ body {
     background-color: wheat;
 }
 
-#image_container {
+#list_container {
     margin-left: 200px;
     margin-top: 200px;
     margin-bottom: 200px;
@@ -24,55 +23,58 @@ body {
     padding-bottom: 40px;
 }
 
-#image_title {
-    padding-bottom: 30px;
-}
-
-.image_upload_area > p {
-    font-weight: 700;
-    color: rgba(36, 36, 36, 0.733);
+#amenity {
     padding-bottom: 20px;
 }
 
-.image_upload_area > form {
-    background-color: rgba(248, 210, 210, 0.267);
-    height: 200px;
-    width: 80%;
+.category {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(139, 138, 138);
-    border-radius: 2px;
-    flex-direction: column;
+    padding-bottom: 15px;
 }
 
-.image_upload_area > form > i::before {
-    font-size: 60px;
-    opacity: 0.5;
-}
-
-.custom_file_upload > input[type="file"] {
-    display: none;
-}
-.custom_file_upload {
+.category_name {
     font-weight: 700;
-    color: white;
-    padding: 10px;
-    width: 15%;
-    border: none;
+    min-width: 20%;
+}
+
+.to_complete {
+    margin-right: 30px;
+}
+
+.to_complete > label {
+    font-weight: 700;
+    color: rgba(36, 36, 36, 0.733);
+    padding-bottom: 6px;
+}
+
+.to_complete > input,
+.to_complete > select,
+.to_complete > textarea {
+    width: 250px;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(29, 28, 28, 0.733);
     border-radius: 2px;
-    display: inline-block;
-    cursor: pointer;
-    background-color:#dc3545;
-    text-align: center;
-
+    border: 1px solid #ced4da;
 }
 
-.custom_file_upload:hover {
-    background-color: #f0384a;
-    cursor: pointer;
+.to_complete > input,
+.to_complete > select,
+.to_complete > textarea {
+    outline: 1px solid 1px;
+    outline-color: rgba(250, 141, 177, 0.658);
 }
 
+.to_complete > * {
+    display: block;
+}
+
+#list_container input::placeholder,
+#list_container textarea::placeholder {
+    opacity: 0.7;
+}
 
 #continue_button {
     min-width: 15%;
@@ -85,9 +87,7 @@ body {
     color: white;
     font-weight: 700;
     margin-top: 10px;
-
 }
-
 
 #continue_button:hover {
     background-color: #f0384a;
@@ -98,3 +98,8 @@ body {
     outline: none;
 }
 
+@media (max-width: 600px) {
+    .category {
+        flex-direction: column;
+    }
+}

@@ -80,8 +80,8 @@ body {
     display: block;
 }
 
-input::placeholder,
-textarea::placeholder {
+#list_container input::placeholder,
+#list_container textarea::placeholder {
     opacity: 0.7;
 }
 

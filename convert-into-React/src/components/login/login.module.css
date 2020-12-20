@@ -33,7 +33,7 @@
     backdrop-filter: blur(30px);
 }
 
-form > .title {
+.login_form > .title {
     font-weight: 600;
     font-size: 40px;
     font-size: 45px;
@@ -43,13 +43,13 @@ form > .title {
     /* color: #eb3245; */
 }
 
-form > label {
+.login_form > label {
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 17px;
 }
 
-form > .type_in {
+.login_form > .type_in {
     font-size: 17px;
     border-radius: 4px;
     padding: 15px;
@@ -58,25 +58,25 @@ form > .type_in {
     margin-bottom: 25px;
 }
 
-form > .type_in:focus {
+.login_form > .type_in:focus {
 
     outline-color: rgba(255, 255, 255, 0.336);
 
 }
 
-form > .type_in::placeholder {
+.login_form > .type_in::placeholder {
     color: rgb(129, 129, 129);
     font-size: 17px;
 }
 
-form > * {
+.login_form > * {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-form > button {
+.login_form > button {
     background-color: #dc3545;
     border-radius: 4px;
     padding: 15px;
@@ -84,27 +84,27 @@ form > button {
     border: none;
 }
 
-form > button:focus {
+.login_form > button:focus {
     outline: none;
 }
 
-form > button:hover {
+.login_form > button:hover {
     background-color: #f0384a;
     cursor: pointer;
 }
 
-form > button > h2 {
+.login_form > button > h2 {
     color: white;
     font-weight: 600;
     font-size: 1.3rem;
 }
 
-form > .message {
+.login_form > .message {
     text-align: center;
     font-size: 17px;
 }
 
-form > .message > a {
+.login_form > .message > a {
     color: #ffffff;
     text-decoration: none;
 }
